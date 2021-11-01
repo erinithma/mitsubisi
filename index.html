@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css?r">
+</head>
+<body>
+    <div id="loading">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <section class="section section--begin">
+        <div class="vulkan"></div>
+        <div class="water"></div>
+        <div class="begin-bg-item"></div>
+        <div class="begin-clouds"></div>
+        <div class="begin-item"></div>
+        <div class="begin-clouds2"></div>
+        <div class="begin-man"></div>
+        <div class="begin-clouds3"></div>
+        <div class="begin-clouds4"></div>
+        <div class="vetka vetka--begin"></div>
+        <div class="begin-text">
+            <h1>Наш тест про Mitsubishi Outlander.<br>Проверь, легко ли ты отличаешь<br>выдумку от правды</h1>
+            <p>
+                <b>Интернет нас кормит бесконечными новостями, половину из которых сам же интернет и придумывает. Лишь человек с полноприводным мозгом распознает ложь, не буксуя.</b>
+            </p>
+            <p>Обновление любой марки автомобиля сопровождается хайпом и небылицами. Mitsubishi Outlander — не исключение. 
+                Что там писали про него в интернете? Нет, не было заголовков «Mitsubishi Outlander сможет летать в космос без дозаправки». Но выдумки писали, этого мы не отрицаем. В этом и состоит суть теста.
+                Мы даем вам заголовок — а вы самостоятельно, ну или с помощью друга/подруги решаете, правда это или же нет. Если вы уже катались на новом Mitsubishi Outlander, то будет проще. Если еще нет –  будет интереснее.
+            </p>
+            <br>
+            <a href="javascript:start()" class="button button--green">НАЧАТЬ ТЕСТ</a>
+        </div>
+        
+        <div class="logo"></div>
+        <div class="logo2"></div>
+        
+    </section>
+    <section class="section section--main" data-index="0" style="display: none;">
+        <div class="logo"></div>
+        <div class="logo2"></div>
+        <div class="text">Мысленно представьте себе новый Mitsubishi Outlander<br> и решите, правда это или выдумки.</div>
+        <div class="slides">
+            <div class="slides__clouds">
+                <div class="slide">
+                    <div class="clouds"></div>
+                    <div class="clouds2"></div>
+                    <div class="clouds3"></div>
+                </div>
+                <div class="slide">
+                   
+                </div>
+                <div class="slide">
+                    <div class="clouds"></div>
+                    <div class="clouds2"></div>
+                    <div class="clouds3"></div>
+                </div>
+                <div class="slide">
+                    
+                </div>
+                <div class="slide">
+                    <div class="clouds"></div>
+                    <div class="clouds2"></div>
+                    <div class="clouds3"></div>
+                </div>
+                <div class="slide">
+                    
+                </div>
+                <div class="slide">
+                    <div class="clouds"></div>
+                    <div class="clouds2"></div>
+                    <div class="clouds3"></div>
+                </div>
+            </div>
+            <div class="slides__bg">
+                <div class="slide">
+                    <div class="dragon"></div>
+                </div>
+                <div class="slide">
+                   
+                </div>
+                <div class="slide">
+                    <div class="item2"></div>
+                </div>
+                <div class="slide">
+                    <div class="item3"></div>
+                </div>
+                <div class="slide">
+                    <div class="item4"></div>
+                </div>
+                <div class="slide">
+                    <div class="item5"></div>
+                </div>
+                <div class="slide"></div>
+            </div>
+            <div class="slides__wrap">
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="vetka"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Журнал «Юный Карбюратор»
+                        </div>
+                        <div class="banner__main-text">
+                            1. Сенсация! Mitsubishi Outlander распрощался с хромированным радиатором и рейлингами.
+                        </div>
+                        <div class="banner__grid">
+                            <div>
+                                <a href="javascript:goTo(1, 0, false)" class="button button--red">НЕПРАВДА</a>
+                                <div class="banner__grid-text">Хрома стало еще больше – Outlander теперь хромирован с головы до пят.</div>
+                            </div>
+                            <div>
+                                <a href="javascript:goTo(1, 0, true)" class="button button--green">ПРАВДА</a>
+                                <div class="banner__grid-text">Хром уже не в моде. Водители предпочитают армированный пенопласт.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slide slide--result">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Журнал «Юный Карбюратор»
+                        </div>
+                        <div class="banner__main-text">
+                            1. Сенсация! Mitsubishi Outlander распрощался с хромированным радиатором и рейлингами.
+                        </div>
+                        <div class="banner__result">
+                            <div class="banner__result-text">
+                                <span class="red">Неправда</span>, хром остался, только решетка радиатора «потемнела» и стала черным хромом.
+                            </div>
+                            <a href="javascript:goTo(2)" class="button button--green">ДАЛЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="item1"></div>
+                    <div class="popugay"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Газета «За Гаражами»
+                        </div>
+                        <div class="banner__main-text">
+                            2. Mitsubishi Outlander кардинально обновил колесные диски. Факт или утка?
+                        </div>
+                        <div class="banner__grid">
+                            <div>
+                                <a href="javascript:goTo(3, 1, true)" class="button button--green">ФАКТ</a>
+                                <div class="banner__grid-text">С новыми 18 дюймовыми дисками поживее стало, поагрессивнее. </div>
+                            </div>
+                            <div>
+                                <a href="javascript:goTo(3, 1, false)" class="button button--red">УТКА</a>
+                                <div class="banner__grid-text">Фирменную классику менять не решились, это было бы святотатство.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide--result">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Газета «За Гаражами»
+                        </div>
+                        <div class="banner__main-text">
+                            2. Mitsubishi Outlander кардинально обновил колесные диски. Факт или утка?
+                        </div>
+                        <div class="banner__result">
+                            <div class="banner__result-text">
+                                <span class="green">Факт.</span> С новыми 18 дюймовыми дисками поживее стало, поагрессивнее. 
+                            </div>
+                            <a href="javascript:goTo(4)" class="button button--green">ДАЛЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Автоблог «Последний форсаж»
+                        </div>
+                        <div class="banner__main-text">
+                            3. Outlander попрощался с кожей в салоне.
+                        </div>
+                        <div class="banner__grid">
+                            <div>
+                                <a href="javascript:goTo(5, 2, true)" class="button button--green">ФАКТ</a>
+                                <div class="banner__grid-text">Теперь обивка комбинированная – чтобы не морозить попу зимой и не жарить летом. </div>
+                            </div>
+                            <div>
+                                <a href="javascript:goTo(5, 2, false)" class="button button--red">УТКА</a>
+                                <div class="banner__grid-text">Латекс и шкуры животных — последний тренд в обивке внедорожных салонов. .</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Автоблог «Последний форсаж»
+                        </div>
+                        <div class="banner__main-text">
+                            3. Outlander попрощался с кожей в салоне.
+                        </div>
+                        <div class="banner__result">
+                            <div class="banner__result-text">
+                                <span class="green">Факт.</span> Теперь обивка комбинированная – чтобы не морозить попу зимой и не жарить летом.
+                            </div>
+                            <a href="javascript:goTo(6)" class="button button--green">ДАЛЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Сайт «Зарево бензоколонки»
+                        </div>
+                        <div class="banner__main-text">
+                            4. Mitsubishi Outlander открывает старый революционный тренд — уменьшение дорожного просвета.
+                        </div>
+                        <div class="banner__grid">
+                            <div>
+                                <a href="javascript:goTo(7, 3, true)" class="button button--green">ФАКТ</a>
+                                <div class="banner__grid-text">Современные просчеты аэродинамических моделей показали, что уменьшение просвета дает больше плюшек, чем нас учили раньше.</div>
+                            </div>
+                            <div>
+                                <a href="javascript:goTo(7, 3, false)" class="button button--red">УТКА</a>
+                                <div class="banner__grid-text">Они ведь не сошли с ума! с нашими дорогами только 215 мм просвета!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Сайт «Зарево бензоколонки»
+                        </div>
+                        <div class="banner__main-text">
+                            4. Mitsubishi Outlander открывает старый революционный тренд — уменьшение дорожного просвета.
+                        </div>
+                        <div class="banner__result">
+                            <div class="banner__result-text">
+                                <span class="red">Утка.</span> Они ведь не сошли с ума! с нашими дорогами только 215 мм просвета!
+                            </div>
+                            <a href="javascript:goTo(8)" class="button button--green">ДАЛЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Газета «Кроссворды и кроссоверы»
+                        </div>
+                        <div class="banner__main-text">
+                            5. Мода на ретро и винтаж настигла Mitsubishi  Outlander. Вернутся угловатые формы и первобытная брутальность.
+                        </div>
+                        <div class="banner__grid">
+                            <div>
+                                <a href="javascript:goTo(9, 4, false)" class="button button--red">УТКА</a>
+                                <div class="banner__grid-text">Outlander не может жертвовать аэродинамикой и современным лоском ради двух фанатиков ретро.</div>
+                            </div>
+                            <div>
+                                <a href="javascript:goTo(9, 4, true)" class="button button--green">ФАКТ</a>
+                                <div class="banner__grid-text">Связь со стариной подчеркивают шелковые занавески в пассажирском салоне, бархат и CD-чейнджер на 50 компакт-дисков.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Газета «Кроссворды и кроссоверы»
+                        </div>
+                        <div class="banner__main-text">
+                            5. Мода на ретро и винтаж настигла Mitsubishi  Outlander. Вернутся угловатые формы и первобытная брутальность.
+                        </div>
+                        <div class="banner__result">
+                            <div class="banner__result-text">
+                                <span class="red">Утка.</span> Outlander не может жертвовать аэродинамикой и современным лоском ради двух фанатиков ретро. 
+                            </div>
+                            <a href="javascript:goTo(10)" class="button button--green">ДАЛЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Сайт «Руль творчества»
+                        </div>
+                        <div class="banner__main-text">
+                            6. Новая отделка противотуманных фар изменила выражение лица Mitsubishi Outlander.
+                        </div>
+                        <div class="banner__grid">
+                            <div>
+                                <a href="javascript:goTo(11, 5, true)" class="button button--green">ФАКТ</a>
+                                <div class="banner__grid-text">Лучше и не скажешь.</div>
+                            </div>
+                            <div>
+                                <a href="javascript:goTo(11, 5, false)" class="button button--red">УТКА</a>
+                                <div class="banner__grid-text">Теперь противотуманные фары автоматически выдвигаются при попадании машины в туман и крутятся во все стороны.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Сайт «Руль творчества»
+                        </div>
+                        <div class="banner__main-text">
+                            6. Новая отделка противотуманных фар изменила выражение лица Mitsubishi Outlander.
+                        </div>
+                        <div class="banner__result">
+                            <div class="banner__result-text">
+                                <span class="green">Факт.</span>  Лучше и не скажешь. 
+                            </div>
+                            <a href="javascript:goTo(12)" class="button button--green">ДАЛЕЕ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Журнал «Асфальтовые рощи»
+                        </div>
+                        <div class="banner__main-text">
+                            7. В 2021 году Mitsubishi Outlander стал гораздо компактнее и легче.
+                        </div>
+                        <div class="banner__grid">
+                            <div>
+                                <a href="javascript:goTo(13, 6, true)" class="button button--green">ФАКТ</a>
+                                <div class="banner__grid-text">Исследования показали, что среднестатистический водитель использует лишь 15% своего салона. Нет смысла его оставлять большим.</div>
+                            </div>
+                            <div>
+                                <a href="javascript:goTo(13, 6, false)" class="button button--red">УТКА</a>
+                                <div class="banner__grid-text">Mitsubishi Outlander остается гордым представителем очень вместительных кроссоверов.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="grass"></div>
+                    <div class="road"></div>
+                    <div class="banner">
+                        <div class="banner__top-text">
+                            Журнал «Асфальтовые рощи»
+                        </div>
+                        <div class="banner__main-text">
+                            7. В 2021 году Mitsubishi Outlander стал гораздо компактнее и легче.
+                        </div>
+                        <div class="banner__result">
+                            <div class="banner__result-text">
+                                <span class="red">Утка.</span> Mitsubishi Outlander остается гордым представителем очень вместительных кроссоверов.
+                            </div>
+                            <a href="javascript:finish()" class="button button--green">УЗНАТЬ РЕЗУЛЬТАТ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="car"></div>
+    </section>
+    <section class="section section--final" style="display: none;">
+        <div class="logo"></div>
+        <div class="logo2"></div>
+        <div class="final-item2"></div>
+        <div class="final-banner">
+            <div class="final-banner__main-text">
+                Твои результаты поразили нас, как гвоздь покрышку. Надо чаще кататься!
+            </div>
+            <div class="final-banner__bottom-text">
+                Тебе осталось посетить <a href="https://www.mitsubishi-motors.ru/auto/outlander/">www.mitsubishi-motors.ru/auto/outlander/</a>,<br> чтобы узнать еще больше.
+            </div>
+            <div class="final-banner__comment">
+                P.S. все издания и цитаты - вымышленные, а этот тест – фантазия и плод воображения. Реальные факты тебя ждут на <a href="https://www.mitsubishi-motors.ru">www.mitsubishi-motors.ru</a>
+            </div>
+            <div class="final-banner__share">
+                Поделиться с друзьями
+                <div class="icons">
+                    <a href=""><img src="./img/fb.svg"></a>
+                    <a href=""><img src="./img/vk.svg"></a>
+                    <a href=""><img src="./img/ok.svg"></a>
+                    <a href=""><img src="./img/twitter.svg"></a>
+                </div>
+                <a href="javascript: start()" class="button button--green">ПРОЙТИ ЕЩЕ РАЗ</a>
+            </div>
+        </div>
+        <div class="final-item"></div>
+        <div class="final-cloud1"></div>
+        <div class="final-cloud2"></div>
+        <div class="man"></div>
+        <div class="final-vetka1"></div>
+        <div class="final-vetka2"></div>
+    </section>
+    <div class="small-overlay">
+        <div class="small-overlay__text1">Пожалуйста, поверните экран своего устройста</div>
+        <div class="small-overlay__text2">*Не забудьте включить функцию поворот экрана на устройстве</div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./script.js?r"></script>
+</body>
+</html>
